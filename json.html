@@ -7,21 +7,29 @@
   </head>
   <body>
     <script>
-      let product = {
-        name: "Tshirt",
-        price: 789,
-        rating: {
-          starts: 4.5,
-          noOfReviews: 453,
-        },
-      };
-      console.log(typeof product);
-      console.log(product);
-      let str = JSON.stringify(product);
-      console.log(typeof str);
-      console.log(str);
-      console.log(localStorage.getItem("product"));
-      let product2 = JSON.parse(getItem("product"));
+            let product = {
+              name: "Tshirt",
+              price: 789,
+              rating: {
+                starts: 4.5,
+                noOfReviews: 453,
+              },
+            };
+            console.log(typeof product);
+            console.log(product);
+            let str = JSON.stringify(product);
+            console.log(typeof str);
+            console.log(str);
+            console.log(localStorage.getItem("product"));
+            let product2 = JSON.parse(getItem("product"));
+            function showResult(userMove, computerMove,result){
+      localStorage.setItem('Score',JSON.stringify(score));
+      alert(`You have choosen ${userMove} and computer as choosen ${computermove})
+
+      let scoreStr = localStorage.getItem('score');
+      let scoreStr = JSON.parse(scoreStr);
+
+            }
     </script>
   </body>
 </html>
